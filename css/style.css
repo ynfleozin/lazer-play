@@ -89,22 +89,20 @@ header .header-buttons {
     width: 100%;
     max-width: 960px;
     height: 0;
-    padding-bottom: 56.25%; /* Mantém a proporção 16:9 */
+    padding-bottom: 56.25%; 
     background: #000;
     cursor: pointer;
-    overflow: hidden; /* Garante que nada "vaze" fora do contêiner */
+    overflow: hidden;
 }
 
-.video-placeholder picture {
+.video-placeholder img {
     width: 100%;
     height: 100%;
-    display: block; /* Garante que o picture ocupe toda a área */
-}
-
-.video-placeholder picture img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Faz a imagem preencher o contêiner sem distorcer */
+    object-fit: cover;  
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .play-button {
@@ -123,10 +121,18 @@ header .header-buttons {
     font-size: 24px;
     border-radius: 50%;
     cursor: pointer;
+    z-index: 2;
 }
 
 .video-placeholder:hover .play-button {
-    background: darkred; 
+    background: darkred;
+}
+
+.video-placeholder iframe {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    z-index: 2; 
 }
 
 
