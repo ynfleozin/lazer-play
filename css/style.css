@@ -89,33 +89,29 @@ header .header-buttons {
     width: 100%;
     max-width: 960px;
     height: 0;
-    padding-bottom: 56.25%; 
+    padding-bottom: 56.25%; /* Mantém a proporção 16:9 */
     background: #000;
     cursor: pointer;
+    overflow: hidden; /* Garante que nada "vaze" fora do contêiner */
 }
 
-.video-placeholder img {
-    position: absolute;
-    top: 0;
-    left: 0;
+.video-placeholder picture {
     width: 100%;
     height: 100%;
+    display: block; /* Garante que o picture ocupe toda a área */
 }
 
-.video-placeholder iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
+.video-placeholder picture img {
     width: 100%;
     height: 100%;
-    border: none;
+    object-fit: cover; /* Faz a imagem preencher o contêiner sem distorcer */
 }
 
 .play-button {
     position: absolute; 
     top: 50%;
     left: 50%; 
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     align-items: center;
