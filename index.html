@@ -16,7 +16,7 @@
 <header>
     <div class="container">
         <div class="logo">
-            <img src="https://mystarflix.fun/wp-content/uploads/2024/11/we-150-50.png" alt="Logo Lazer Play IPTV" loading="lazy">
+            <img src="https://mystarflix.fun/wp-content/uploads/2024/11/we-150-50.png" alt="Logo Lazer Play IPTV">
         </div>
         <div class="header-buttons">
             <a href="https://weplaystream.com/whats-random">
@@ -59,7 +59,10 @@
 
         <!-- Video Placeholder -->
         <div class="video-placeholder" onclick="loadVideo(this)">
-            <img src="imgs/wePlayThumb.webp" alt="Thumbnail do vídeo"/>
+            <img src="imgs/wePlayThumb.webp"
+             alt="Thumbnail do vídeo" 
+             fetchpriority="high"
+             />
             <button class="play-button" aria-label="Reproduzir vídeo">
                 <i class="fa-solid fa-play"></i>
             </button>
