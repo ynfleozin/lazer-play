@@ -71,16 +71,6 @@ header .header-buttons {
     margin-bottom: 30px;
 }
 
-.hero-section button {
-    background-color: #000;
-    border: none;
-    padding: 15px 40px;
-    color: #fff;
-    font-weight: 700;
-    font-size: 1rem;
-    margin-bottom: 20px;
-}
-
 .hero-section .bullets {
     display: flex;
     flex-wrap: wrap;
@@ -92,15 +82,6 @@ header .header-buttons {
 .hero-section .bullets div {
     display: flex;
     align-items: center;
-}
-
-.hero-section .video-placeholder {
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-    background-color: #e0e0e0;
-    border-radius: 10px;
-    position: relative;
 }
 
 .video-placeholder {
@@ -131,23 +112,27 @@ header .header-buttons {
 }
 
 .play-button {
-    position: absolute;
+    position: absolute; 
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.5);
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: red; 
     color: white;
     border: none;
-    padding: 10px 20px;
+    width: 60px; 
+    height: 60px; /
     font-size: 24px;
     border-radius: 50%;
     cursor: pointer;
-    display: none;
 }
 
 .video-placeholder:hover .play-button {
-    display: block;
+    background: darkred; 
 }
+
 
 /* Features Section */
 .features-section {
