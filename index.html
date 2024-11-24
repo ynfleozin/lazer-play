@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lazer Play oferece uma experiência única com acesso a milhares de canais, filmes e séries em alta definição. Confira agora mesmo e aproveite o melhor do entretenimento digital!">
     <title>Lazer Play - Entretenimento Sem Limites </title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" async></script>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </noscript>
 </head>
 <body>
 
@@ -14,7 +16,7 @@
 <header>
     <div class="container">
         <div class="logo">
-            <img src="https://mystarflix.fun/wp-content/uploads/2024/11/we-150-50.png" alt="Logo Lazer Play IPTV">
+            <img src="https://mystarflix.fun/wp-content/uploads/2024/11/we-150-50.png" alt="Logo Lazer Play IPTV" loading="lazy">
         </div>
         <div class="header-buttons">
             <a href="https://weplaystream.com/whats-random">
@@ -57,10 +59,7 @@
 
         <!-- Video Placeholder -->
         <div class="video-placeholder" onclick="loadVideo(this)">
-            <img src="imgs/wePlayThumb.webp"
-             alt="Thumbnail do vídeo" 
-             fetchpriority="high"
-             />
+            <img src="imgs/wePlayThumb.webp" alt="Thumbnail do vídeo"/>
             <button class="play-button" aria-label="Reproduzir vídeo">
                 <i class="fa-solid fa-play"></i>
             </button>
