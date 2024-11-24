@@ -579,11 +579,6 @@ footer a {
         font-size: 2rem;
     }
 
-    .video-placeholder img {
-        width: 400px;
-        height: auto;
-    }
-
     .features-section h2, .comparison-section h2, .pricing-section h2, .faq-section h2 {
         font-size: 1.5rem;
     }
