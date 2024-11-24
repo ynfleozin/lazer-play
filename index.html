@@ -6,6 +6,7 @@
     <title>Lazer Play - Entretenimento Sem Limites </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -56,8 +57,9 @@
         </div>
 
         <!-- Video Placeholder -->
-        <div class="video-placeholder">
-            <p><iframe loading="lazy" width="969" height="546" src="https://www.youtube.com/embed/pL9Og5eDaRc?si=rJmcWNxR3cne76-K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><p>
+        <div class="video-placeholder" onclick="loadVideo(this)">
+            <img src="https://img.youtube.com/vi/pL9Og5eDaRc/hqdefault.jpg" alt="Thumbnail do vídeo" />
+            <button class="play-button">▶</button>
         </div>
     </div>
 </section>
