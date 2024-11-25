@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 /* Global Styles */
@@ -266,6 +265,12 @@ header .header-buttons {
 .alternating-section .box .image {
     flex: 1;
     text-align: center;
+}
+
+.alternating-section .box .image img {
+    max-width: 100%; 
+    height: auto;    
+    display: block;  
 }
 
 /* Comparison Section */
@@ -573,10 +578,6 @@ footer a {
 @media (max-width: 768px) {
     .mobile-img{
         display: flex;
-    }
-
-    .image{
-        width: auto;
     }
 
     .desktop-img{
