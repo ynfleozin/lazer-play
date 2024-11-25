@@ -212,7 +212,6 @@ header .header-buttons {
 }
 
 .alternating-section .container {
-    max-width: 970px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -266,7 +265,6 @@ header .header-buttons {
 .alternating-section .box .image {
     flex: 1;
     text-align: center;
-    padding: 20px;
 }
 
 /* Comparison Section */
