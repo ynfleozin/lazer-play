@@ -576,6 +576,10 @@ footer a {
         display: flex;
     }
 
+    .image{
+        width: 100%;
+    }
+
     .desktop-img{
         display: none;
     }
