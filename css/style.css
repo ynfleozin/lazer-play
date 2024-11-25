@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 /* Global Styles */
@@ -575,7 +576,7 @@ footer a {
     }
 
     .image{
-        width: 100%;
+        width: auto;
     }
 
     .desktop-img{
