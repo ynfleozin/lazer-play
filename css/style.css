@@ -101,6 +101,10 @@ header .header-buttons {
     z-index: 1;
 }
 
+.mobile-img{
+    display: none;
+}
+
 .play-button {
     position: absolute; 
     top: 50%;
@@ -568,6 +572,14 @@ footer a {
 
 /* Media Queries */
 @media (max-width: 768px) {
+    .mobile-img{
+        display: flex;
+    }
+
+    .desktop-img{
+        display: none;
+    }
+
     .hero-section h2 {
         font-size: 2rem;
     }
